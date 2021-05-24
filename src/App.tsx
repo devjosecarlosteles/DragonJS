@@ -1,8 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Home from './Home'
 import { GlobalStyle } from './styles/GlobalStyle'
-
-import Greetings from './components/Greetings'
 
 const mainElement = document.createElement('div')
 mainElement.setAttribute('id', 'root')
@@ -12,7 +11,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Greetings />
+      <Home />
     </>
   )
 }

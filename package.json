@@ -14,8 +14,7 @@
     "build:electron": "webpack --config webpack/electron.webpack.js",
     "build:react": "webpack --config webpack/react.webpack.js",
     "package": "npm-run-all build package:dist",
-    "package:dist": "electron-builder --dir",
-    "test": "jest"
+    "package:dist": "electron-builder --dir"
   },
   "keywords": [],
   "author": "Diego Fernandes <diego.schell.f@gmail.com>",
@@ -55,8 +54,6 @@
     "eslint-plugin-react": "^7.20.1",
     "eslint-plugin-standard": "^4.0.1",
     "html-webpack-plugin": "^4.2.0",
-    "husky": "^4.2.5",
-    "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
