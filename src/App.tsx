@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import Home from './Home'
+import Routes from './routes'
 import { GlobalStyle } from './styles/GlobalStyle'
 
 const mainElement = document.createElement('div')
@@ -11,7 +12,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <Routes />
     </>
   )
 }
