@@ -1,12 +1,17 @@
 import React from 'react'
+
+import {
+  Container
+} from './style'
 import Header from '../components/Header'
+import LeftContainer from './components/LeftContainer'
 
 function Home () : JSX.Element {
   return (
-    <div>
-      <Header />
-      <h1>Hello World</h1>
-    </div>
+    <Container>
+      <Header notMaximize />
+      <LeftContainer/>
+    </Container>
   )
 }
 

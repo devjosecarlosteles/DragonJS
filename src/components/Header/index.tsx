@@ -1,10 +1,24 @@
 import React from 'react'
 
-function Header(): JSX.Element {
+import {
+  Container,
+  Logo
+} from './style'  
+
+import ButtonHeader from '../ButtonHeader'
+import logo from '../../assets/image/logo.png'
+
+interface HeaderProps {
+  notMaximize?: boolean;
+}
+
+function Header({ notMaximize=false }: HeaderProps) {
   return (
-      <header>
+      <Container>
+        <Logo src={ logo } alt='logo' />
         <span>DragonJS</span>
-      </header>
+        <ButtonHeader notMaximize={ notMaximize } />
+      </Container>
   )
 }
 
