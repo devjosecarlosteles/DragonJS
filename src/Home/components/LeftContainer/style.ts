@@ -6,4 +6,12 @@ export const Container = styled.div`
   height: 96vh;
 
   background-color: ${ palet.backgroundDark };
+
+  span {
+    margin-left: 10px;
+
+    font-size: 0.8rem;
+
+    color: ${ palet.textPrimary }
+  }
 `

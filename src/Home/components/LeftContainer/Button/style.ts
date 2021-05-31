@@ -8,7 +8,9 @@ export const Container = styled.div`
   display: flex;
 
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+
+  font-size: 0.9rem;
 
   background-color: ${ palet.backgroundLight };
 
@@ -16,5 +18,9 @@ export const Container = styled.div`
 
   :hover {
     background-color: #505050;
+
+    svg {
+      color: #000;
+    }
   }
 `
