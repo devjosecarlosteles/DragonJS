@@ -1,6 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
-import Home from './Home'
+import { render } from 'react-dom'  
 import Routes from './routes'
 import { GlobalStyle } from './styles/GlobalStyle'
 

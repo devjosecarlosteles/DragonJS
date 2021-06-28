@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from './Button'
 
 import { Container } from './style'
@@ -9,15 +9,25 @@ import {
   FiFolderPlus
 } from 'react-icons/fi'
 
-function LeftContainer() {
+interface LeftContainerProps{
+  callbackParent: Function
+}
+
+function LeftContainer({ callbackParent }: LeftContainerProps) {
+  // callbackPArent returns what it should and show it right container
+  // callbackParent possibilities ( newfile, openfile, newproject, openproject )
   return (
     <Container>
-      <Button icon={ <FiFilePlus/> } title="Novo Arquivo"/>
+      <Button 
+        icon={ <FiFilePlus/> }
+        title="Novo Arquivo"
+        onPress={() => callbackParent('newfile')}
+      />
       <Button icon={ <FiFile/> } title="Abrir Arquivo"/>
       <Button icon={ <FiFolderPlus/> } title="Novo Projeto"/>
       <Button icon={ <FiFolder/> } title="Abrir Projeto"/>
       <br/>
-      <span>Arquivos recentes</span>
+      <span>Arquivos recentes</span>  
     </Container>
   )
 }

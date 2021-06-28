@@ -17,6 +17,12 @@ export const Container = styled.header`
   // electron 
   user-select: none;
   -webkit-app-region: drag; 
+
+  span {
+    position: relative;
+
+    left: 30px;
+  }
 `
 
 export const Logo = styled.img`
